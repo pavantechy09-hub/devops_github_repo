@@ -1,0 +1,52 @@
+🧱 Setup & Configuration
+Command	Description
+git config --global user.name "YourName"	Set your global Git username.
+git config --global user.email "you@example.com"	Set your global Git email.
+git config --list	Show all current Git configurations.
+git config user.name "Name"	Set username only for current repo.
+📦 Repository Management
+Command	Description
+git init	Initialize a new Git repository.
+git clone <repo_url>	Clone an existing repository from GitHub.
+git remote -v	Show remote repository URLs.
+git remote add origin <repo_url>	Link a local repo to a remote GitHub repo.
+git remote set-url origin <new_url>	Change the remote repo URL (useful for switching HTTPS ↔ SSH).
+💾 Staging & Committing Changes
+Command	Description
+git status	Show current changes and branch status.
+git add <file>	Stage a specific file for commit.
+git add .	Stage all modified and new files.
+git restore --staged <file>	Unstage a file that was added.
+git commit -m "your message"	Commit staged changes with a message.
+git log	Show commit history.
+🌿 Branching & Merging
+Command	Description
+git branch	List branches in the repo.
+git branch <branch_name>	Create a new branch.
+git checkout <branch_name>	Switch to another branch.
+git checkout -b <branch_name>	Create and switch to a new branch.
+git merge <branch_name>	Merge another branch into the current branch.
+git branch -d <branch_name>	Delete a local branch.
+🚀 Remote Operations (GitHub)
+Command	Description
+git fetch	Download changes from remote without merging.
+git pull	Fetch + merge changes from remote.
+git push	Push commits to the remote branch.
+git push -u origin <branch>	Push branch for the first time and track it.
+git push origin --delete <branch>	Delete a remote branch.
+🧹 Undoing & Fixing Mistakes
+Command	Description
+git restore <file>	Discard local changes to a file.
+git reset HEAD~1	Undo the last commit (keep changes unstaged).
+git reset --hard HEAD~1	Completely remove the last commit and changes.
+git revert <commit_id>	Create a new commit that undoes an older commit.
+🕵️ Viewing Changes
+Command	Description
+git diff	Show unstaged changes.
+git diff --staged	Show staged (to-be-committed) changes.
+git show <commit_id>	Show details of a specific commit.
+🔐 Credentials & Auth
+Command	Description
+git credential reject	Remove stored credentials for a specific host.
+git remote set-url origin git@github.com:user/repo.git	Switch to SSH authentication.
+git credential-manager erase	Remove cached credentials (HTTPS).
